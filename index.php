@@ -75,9 +75,8 @@
 		<div class="col-md-6 ">
 			<h2 style="text-align:center">
 				QUANG DUY HUNG
-                <img src="121820155_2779832892291163_5027139127195995414_o.jpg" alt="">
             </h2 >
-                <a href="a.php"><img src="pol-sanchez-almerge-screenshot009.jpg" alt=""></a>
+                <a href="hung.php"><img src="image/hung/121820155_2779832892291163_50271391271959954141_o.jpg" alt="" class="img-fluid"></a>
 			<p>
 				
 			</p>
@@ -89,7 +88,7 @@
 			<h2 style="text-align:center">
 				DO TIEN DAT
             </h2>
-                <a href="a.php"><img src="pol-sanchez-almerge-toolbag-uplox.jpg" alt=""></a>
+                <a href="dat.php"><img src="image/dat/about.jpg" alt="" class="img-fluid"></a>
 			<p>
             My name is Do Tien Dat. I am 20 years old and single, I am studying information technology at Irrigation University. I love to read books and listen to music. I am a careful and hardworking person. I'm eager to learn new things and ready to work as a team. I easily adapt to the new working environment and be proactive at work.
 			</p>
