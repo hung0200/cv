@@ -75,6 +75,7 @@
 		<div class="col-md-6 ">
 			<h2 style="text-align:center">
 				QUANG DUY HUNG
+                <img src="121820155_2779832892291163_5027139127195995414_o.jpg" alt="">
             </h2 >
                 <a href="a.php"><img src="pol-sanchez-almerge-screenshot009.jpg" alt=""></a>
 			<p>
