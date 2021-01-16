@@ -18,11 +18,11 @@
 <div class="container-fluid padding">	
 	<div class="row text-center padding">
 		<div class="col-12">
-			<h2>thank you</h2>
+			<h2>thank you for contact to me</h2>
 
    
        
-        <a href="a.php" class="btn btn-primary ">HOME</a></div>
+        <a href="index.php" class="btn btn-primary ">HOME</a></div>
 
     </div>
      </div>

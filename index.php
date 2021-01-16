@@ -76,12 +76,12 @@
 			<h2 style="text-align:center">
 				QUANG DUY HUNG
             </h2 >
-                <a href="hung.php"><img src="image/hung/121820155_2779832892291163_50271391271959954141_o.jpg" alt="" class="img-fluid"></a>
+            <a href="hung.php"><img src="image/hung/121820155_2779832892291163_50271391271959954141_o.jpg" alt="" class="img-fluid"></a>
 			<p>
             My name is Do Tien Dat. I am 20 years old and single, I am studying information technology at Irrigation University. I love to read books and listen to music. I am a careful and hardworking person. I'm eager to learn new things and ready to work as a team. I easily adapt to the new working environment and be proactive at work.
 			</p>
 			<p style="text-align:center">
-                <a class="btn btn-primary" href="a.php" role="button">VIEW DETAILS »</a>
+                <a class="btn btn-primary" href="hung.php" role="button">VIEW DETAILS »</a>
 			</p>
 		</div>
 		<div class="col-md-6">
@@ -93,7 +93,7 @@
             My name is Do Tien Dat. I am 20 years old and single, I am studying information technology at Irrigation University. I love to read books and listen to music. I am a careful and hardworking person. I'm eager to learn new things and ready to work as a team. I easily adapt to the new working environment and be proactive at work.
 			</p>
 			<p style="text-align:center">
-                <a class="btn btn-primary" href="a.php" role="button">VIEW DETAILS »</a>
+                <a class="btn btn-primary" href="dat.php" role="button">VIEW DETAILS »</a>
 			</p>
 		</div>
     </div>
