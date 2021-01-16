@@ -61,7 +61,7 @@
             <div class="row">
                 <div class="col-md-4 ">
                     <div class="py-2">
-                        <img alt="" src="121820155_2779832892291163_5027139127195995414_o.jpg" class="img-fluid"/>
+                        <img alt="" src="image/hung/121820155_2779832892291163_5027139127195995414_o.jpg" class="img-fluid"/>
                     </div>
                     <div>
                     <?php
@@ -465,7 +465,7 @@
     </div>
 
 <!-- ACHIEVEMENT -->
-<div id="ACHIEVEMENT" class="container-fluid shadow p-3 mb-5 rounded mt-3 bg-dark text-light">
+<div id="ACHIEVEMENT" class="container-fluid shadow p-3 mb-5 rounded mt-3 bg-light text-dark">
     <div class="container">
         <div class="row px-3">
             <div class="col-md-4 ">
@@ -483,7 +483,7 @@
                         <span class="carousel-control-prev-icon "></span>
 
                     </a>
-                    <div class="carousel-inner bg-dark " >
+                    <div class="carousel-inner bg-light " >
                         <div class="carousel-item active" >
                         <?php
                     ob_start() ;
