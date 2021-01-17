@@ -74,3 +74,6 @@ h2{
 .container{
     background-color: #B4E3DD;
 }
+#main img{
+    border-radius: 50%;
+}

@@ -76,9 +76,9 @@
 			<h2 style="text-align:center">
 				QUANG DUY HUNG
             </h2 >
-            <a href="hung.php"><img src="image/hung/121820155_2779832892291163_50271391271959954141_o.jpg" alt="" class="img-fluid"></a>
+            <a href="hung.php"><img src="image/hung/hung.jpg" alt="" class="img-fluid"></a>
 			<p>
-            My name is Do Tien Dat. I am 20 years old and single, I am studying information technology at Irrigation University. I love to read books and listen to music. I am a careful and hardworking person. I'm eager to learn new things and ready to work as a team. I easily adapt to the new working environment and be proactive at work.
+            My name is Quang Duy Hung. I am 20 years old and single, I am studying information technology at Thuy Loi University. I am a pretty fast person in all jobs and always find ways to solve all problems in a certain amount of time
 			</p>
 			<p style="text-align:center">
                 <a class="btn btn-primary" href="hung.php" role="button">VIEW DETAILS »</a>
@@ -90,7 +90,7 @@
             </h2>
                 <a href="dat.php"><img src="image/dat/about.jpg" alt="" class="img-fluid"></a>
 			<p>
-            My name is Do Tien Dat. I am 20 years old and single, I am studying information technology at Irrigation University. I love to read books and listen to music. I am a careful and hardworking person. I'm eager to learn new things and ready to work as a team. I easily adapt to the new working environment and be proactive at work.
+            My name is Do Tien Dat. I am 20 years old and single, I am studying information technology at Thuy Loi University. I love to read books and listen to music. I am a careful and hardworking person. I'm eager to learn new things and ready to work as a team. I easily adapt to the new working environment and be proactive at work.
 			</p>
 			<p style="text-align:center">
                 <a class="btn btn-primary" href="dat.php" role="button">VIEW DETAILS »</a>
