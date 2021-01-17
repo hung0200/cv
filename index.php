@@ -24,7 +24,7 @@
             <div class="row">
                 <div class="col-md-4 ">
                     <div class="py-2">
-                        <img alt="" src="image/1.jpg" class="img-fluid"/>
+                        <img src="image/hung/anhnen.jpg" alt="" class="img-fluid" style="border-radius: 0;"/>
                     </div>
 
                 </div>
