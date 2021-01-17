@@ -30,17 +30,16 @@ exit(); }
                 <tr>
                     <th>Id</th>
                     <th>Name</th>
-                    <th>Address</th>
                     <th>email</th>
                     <th>phone</th>
-                    <th>date of birth</th>
-                    <th>mo ta</th>
-                    <th>update</th>
+                  
+                    <th>command</th>
+                    <th>view</th>
                 </tr>
             </thead>
     <?php
     require 'connect.php';
-    $sql="select * from member";
+    $sql="select * from contact";
     $result=mysqli_query($conn,$sql);
         $data_list=mysqli_fetch_all($result);
         foreach($data_list as $data){
@@ -50,18 +49,21 @@ exit(); }
             echo"<td>$data[2]</td>";    
             echo"<td>$data[3]</td>";
             echo"<td>$data[4]</td>";
-            echo"<td>$data[5]</td>";
-            echo"<td>$data[6]</td>";    
+       
+   
  
   
-            echo"<td><a href='update.php?id=".$data[0]."'><i class='fas fa-edit'></i></a></td>";
+            echo"<td><a href='view.php?id=".$data[0]."'><i class='fas fa-edit'></i></a></td>";
          
             echo"</tr>";
         }
         echo"</table>";
         echo"</div>";
     ?>
-<a href="close.php">log out </a>
+    <DIV CLASS="container shadow p-3 mb-5 bg-white rounded mt-3">
+     <div class="col-md-12 d-flex flex-column justify-content-center">
+<a href="close.php" class="btn btn-primary">LOGOUT</a></DIV>
+</DIv>
 
 
 

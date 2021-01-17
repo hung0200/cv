@@ -18,14 +18,19 @@
 <div class="container-fluid padding">	
 	<div class="row text-center padding">
 		<div class="col-12">
-			<h2>thank you</h2>
+			<h2>THANK YOU FOR CONTACT TO ME, CHECK MAIL TO SEE RECOVERY FROM US </h2>
 
    
        
-        <a href="a.php" class="btn btn-primary ">HOME</a></div>
+
 
     </div>
      </div>
     </div>
+    <DIV CLASS="container shadow p-3 mb-5 bg-white rounded mt-3">
+     <div class="col-md-12 d-flex flex-column justify-content-center">
+<a href="index.php" class="btn btn-primary">HOME</a></DIV>
+</DIv>
+
 </body>
 </html>
