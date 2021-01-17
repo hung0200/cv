@@ -61,7 +61,7 @@
             <div class="row">
                 <div class="col-md-4 ">
                     <div class="py-2">
-                        <img alt="" src="image/hung/121820155_2779832892291163_5027139127195995414_o.jpg" class="img-fluid"/>
+                        <img alt="" src="image/dat/about.jpg" class="img-fluid"/>
                     </div>
                     <div>
                     <?php
@@ -128,7 +128,7 @@
                         ?>
                         </div>
                         <div class="row">
-                            <p class=" col-md-4 col-lg-4">Date_of_bỉth</p>
+                            <p class=" col-md-4 col-lg-4">Date_of_birth</p>
                             <p class=" col-md-1 col-lg-1">:</p>
                             <?php
                             ob_start() ;
@@ -191,22 +191,22 @@
                 <div class="col-md-1 ">
                     <div class="h-100">
                         <div class="col-lg-3 col-md-3 h-25 w-25">
-                            <a href="https://github.com/hung0200">
+                            <a href="https://github.com/dotiendat3101">
                                 <i  class="fab fa-github-square" style="color: #482aff"></i>
                             </a>
                         </div>
                         <div class="col-lg-3 col-md-3 h-25 w-25">
-                            <a href="https://www.instagram.com/quangduyhung/">
+                            <a href="https://www.instagram.com/datdo3101/">
                                 <i class="fab fa-instagram-square " style="color: #482aff"></i>
                             </a>
                         </div>
                         <div class="col-lg-3 col-md-3 h-25 w-25">
-                            <a href="https://twitter.com/QungQungDuy1">
+                            <a href="https://twitter.com/dotiendat3101">
                                 <i class="fab fa-twitter-square" style="color: #482aff"></i>
                             </a>
                         </div>
                         <div class="col-lg-3 col-md-3 h-25 w-25">
-                            <a href="https://www.facebook.com/profile.php?id=100007934385454">
+                            <a href="https://www.facebook.com/dat.tkantkank/">
                                 <i  class="fab fa-facebook-square" style="color: #482aff"></i>
                             </a>
                         </div>
@@ -451,10 +451,10 @@ During my study, I have achieved certain achievements, the following are the ach
                         $data_list=mysqli_fetch_all($result);
                         foreach($data_list as $data){
                         echo "<tr>";
-                        echo"<h3 class=\"m-0\">Date: $data[2] <br></h3> ";
-                        echo"<h3 class=\"m-0\">Name achievement: $data[1]: <br></h3> ";
+                        echo"<h5 class=\"m-0 font-weight-bold\">Date: $data[2] <br></h5> <br>";
+                        echo"<h5 class=\"m-0\">$data[1] <br></h5> <br> ";
                     
-                        echo"<p class=\"m-0\">Description: $data[3] <br></p> ";
+                        echo"<p class=\"m-0\">$data[3] <br></p> ";
       
                         echo"</tr>";
                         }
@@ -473,10 +473,10 @@ During my study, I have achieved certain achievements, the following are the ach
                         foreach($data_list as $data){
                         echo "<tr>";
                         echo "<tr>";
-                        echo"<h3 class=\"m-0\">Date: $data[2] <br></h3> ";
-                        echo"<h3 class=\"m-0\">Name achievement: $data[1]: <br></h3> ";
+                        echo"<h4 class=\"m-0 font-weight-bold\">$data[2] <br></h4> <br>";
+                        echo"<h4 class=\"m-0\">$data[1]: <br></h4> <br>";
                     
-                        echo"<p class=\"m-0\">Description: $data[3] <br></p> ";
+                        echo"<p class=\"m-0\">$data[3] <br></p> ";
       
                         echo"</tr>";
                         }
@@ -494,10 +494,10 @@ During my study, I have achieved certain achievements, the following are the ach
                         foreach($data_list as $data){
                         echo "<tr>";
                         echo "<tr>";
-                        echo"<h3 class=\"m-0\">Date: $data[2] <br></h3> ";
-                        echo"<h3 class=\"m-0\">Name achievement: $data[1]: <br></h3> ";
+                        echo"<h5 class=\"m-0 font-weight-bold\">$data[2] <br></h5> <br> ";
+                        echo"<h5 class=\"m-0\">$data[1]: <br></h5> <br> ";
                     
-                        echo"<p class=\"m-0\">Description: $data[3] <br></p> ";
+                        echo"<p class=\"m-0\">$data[3] <br></p> ";
       
                         echo"</tr>";
                         }
@@ -528,7 +528,7 @@ During my study, I have achieved certain achievements, the following are the ach
                     <div class="i_c"></div>  
                 </div> <br>
                 <p class="px-3"> 
-these are the places I have studied and achieved in those schools</p>
+These are the places I have studied and achieved in those schools</p>
             </div> 
             <div class="col-md-8 d-flex flex-column justify-content-center px-5 py-5 border-left " style="background-color: #E5FEFD">
                 <div class=" shadow  bg-white rounded " >
@@ -567,7 +567,10 @@ these are the places I have studied and achieved in those schools</p>
                         $data_list=mysqli_fetch_all($result);
                         foreach($data_list as $data){
                         echo "<tr>";
-                        echo"achievement: $data[2]";
+                        echo"<h5 class=\"m-0\">$data[3] <br></h5> <br> ";
+                        echo"<h5 class=\"m-0\">Certificate: $data[2] <br></h5> <br> ";
+                    
+                        echo"<p class=\"m-0\">$data[4] <br></p> ";
                       
       
                         echo"</tr>";
@@ -611,7 +614,10 @@ these are the places I have studied and achieved in those schools</p>
                         $data_list=mysqli_fetch_all($result);
                         foreach($data_list as $data){
                         echo "<tr>";
-                        echo"achievement: $data[2]";
+                        echo"<h5 class=\"m-0\">$data[3] <br></h5> <br> ";
+                        echo"<h5 class=\"m-0\">Certificate: $data[2] <br></h5> <br> ";
+                    
+                        echo"<p class=\"m-0\">$data[4] <br></p> ";
                       
       
                         echo"</tr>";
@@ -655,7 +661,10 @@ these are the places I have studied and achieved in those schools</p>
                         $data_list=mysqli_fetch_all($result);
                         foreach($data_list as $data){
                         echo "<tr>";
-                        echo"achievement: $data[2]";
+                        echo"<h5 class=\"m-0\">$data[3] <br></h5> <br> ";
+                        echo"<h5 class=\"m-0\">Certificate: $data[2] <br></h5> <br> ";
+                    
+                        echo"<p class=\"m-0\">$data[4] <br></p> ";
                       
       
                         echo"</tr>";
@@ -693,12 +702,12 @@ After nearly 3 years of learning to code here are some of the projects that I ha
                 <div class="row">
                     <div class="col-md-4 ">
                         <a id="modal-318613" href="#modal-container-318613"  data-toggle="modal">
-                            <img src="image/hung/duan1.png" alt="" class="img-fluid">
+                            <img src="image/dat/project1.png" alt="" class="img-fluid">
                         </a>
                         <?php
                         ob_start() ;
                         require 'connect.php';
-                         $sql="SELECT * from projects where ID='3' and FIELD='software'";
+                         $sql="SELECT * from projects where ID='3' and FIELD='Software'";
     
                         $result=mysqli_query($conn,$sql);
                         $data_list=mysqli_fetch_all($result);
@@ -717,12 +726,12 @@ After nearly 3 years of learning to code here are some of the projects that I ha
                                 <div class="modal-content">
 
                                     <div class="modal-body">
-                                        
+                                        <img src="image/dat/project1.png" alt="" class="img-fluid">
                                             
                                             <?php
                         ob_start() ;
                         require 'connect.php';
-                         $sql="SELECT * from projects where ID='3' and FIELD='software'";
+                         $sql="SELECT * from projects where ID='3' and FIELD='Software'";
     
                         $result=mysqli_query($conn,$sql);
                         $data_list=mysqli_fetch_all($result);
@@ -741,13 +750,13 @@ After nearly 3 years of learning to code here are some of the projects that I ha
                         </div>
                     </div>
                     <div class="col-md-4 ">
-                        <a id="modal-318613" href="#modal-container-318613"  data-toggle="modal">
-                            <img src="image/hung/duan1.png" alt="" class="img-fluid">
+                        <a id="modal-318614" href="#modal-container-318614"  data-toggle="modal">
+                            <img src="image/dat/project2.jpg" alt="" class="img-fluid">
                         </a>
                         <?php
                         ob_start() ;
                         require 'connect.php';
-                         $sql="SELECT * from projects where ID='3' and FIELD='software'";
+                         $sql="SELECT * from projects where ID='3' and FIELD='SQL'";
     
                         $result=mysqli_query($conn,$sql);
                         $data_list=mysqli_fetch_all($result);
@@ -758,20 +767,21 @@ After nearly 3 years of learning to code here are some of the projects that I ha
       
                         echo"</tr>";
                         }
+                        
                         ob_flush();
                         ?>
                       
-                        <div class="modal fade" id="modal-container-318613" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="modal-container-318614" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
 
                                     <div class="modal-body">
-                                        
+                                        <img src="image/dat/project2.jpg" alt="" class="img-fluid">
                                             
                                             <?php
                         ob_start() ;
                         require 'connect.php';
-                         $sql="SELECT * from projects where ID='3' and FIELD='software'";
+                         $sql="SELECT * from projects where ID='3' and FIELD='SQL'";
     
                         $result=mysqli_query($conn,$sql);
                         $data_list=mysqli_fetch_all($result);
@@ -791,13 +801,13 @@ After nearly 3 years of learning to code here are some of the projects that I ha
                     </div>
                    
                     <div class="col-md-4 ">
-                        <a id="modal-318613" href="#modal-container-318613"  data-toggle="modal">
-                            <img src="image/hung/duan1.png" alt="" class="img-fluid">
+                        <a id="modal-318615" href="#modal-container-318615"  data-toggle="modal">
+                            <img src="image/dat/project3.jpg" alt="" class="img-fluid">
                         </a>
                         <?php
                         ob_start() ;
                         require 'connect.php';
-                         $sql="SELECT * from projects where ID='3' and FIELD='software'";
+                         $sql="SELECT * from projects where ID='3' and FIELD='Web'";
     
                         $result=mysqli_query($conn,$sql);
                         $data_list=mysqli_fetch_all($result);
@@ -811,17 +821,17 @@ After nearly 3 years of learning to code here are some of the projects that I ha
                         ob_flush();
                         ?>
                       
-                        <div class="modal fade" id="modal-container-318613" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="modal-container-318615" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
 
                                     <div class="modal-body">
-                                        
+                                    <img src="image/dat/project3.jpg" alt="" class="img-fluid">
                                             
                                             <?php
                         ob_start() ;
                         require 'connect.php';
-                         $sql="SELECT * from projects where ID='3' and FIELD='software'";
+                         $sql="SELECT * from projects where ID='3' and FIELD='Web'";
     
                         $result=mysqli_query($conn,$sql);
                         $data_list=mysqli_fetch_all($result);
@@ -879,7 +889,7 @@ Besides studying and working hours, here are some of my hobbies.</p>
                         $data_list=mysqli_fetch_all($result);
                         foreach($data_list as $data){
                         echo "<tr>";
-                        echo"<h4 class=\"m-0\">$data[1]: <br></h4> ";
+                        echo"<h4 class=\"m-0 font-weight-bold\">$data[1]: <br></h4> <br>";
                         echo"<p class=\"m-0\">$data[2] <br></p> ";
                    
                     
@@ -900,7 +910,7 @@ Besides studying and working hours, here are some of my hobbies.</p>
                         $data_list=mysqli_fetch_all($result);
                         foreach($data_list as $data){
                         echo "<tr>";
-                        echo"<h4 class=\"m-0\">$data[1]: <br></h4> ";
+                        echo"<h4 class=\"m-0 font-weight-bold\">$data[1]: <br></h4> <br> ";
                         echo"<p class=\"m-0\">$data[2] <br></p> ";
                    
                     
@@ -921,7 +931,7 @@ Besides studying and working hours, here are some of my hobbies.</p>
                         $data_list=mysqli_fetch_all($result);
                         foreach($data_list as $data){
                         echo "<tr>";
-                        echo"<h4 class=\"m-0\">$data[1]: <br></h4> ";
+                        echo"<h4 class=\"m-0 font-weight-bold\">$data[1]: <br></h4> <br>";
                         echo"<p class=\"m-0\">$data[2] <br></p> ";
                     
                  
@@ -999,7 +1009,6 @@ These are the places where I worked cso related to computers and programming</p>
                         echo"Position: $data[4]<br>";
                         
                         echo"Description: $data[2]<br>";
-                        echo"Achievement: $data[5]<br>";
       
                         echo"</tr>";
                         }
@@ -1047,7 +1056,6 @@ These are the places where I worked cso related to computers and programming</p>
                         echo"Position: $data[4]<br>";
                         
                         echo"Description: $data[2]<br>";
-                        echo"Achievement: $data[5]<br>";
       
                         echo"</tr>";
                         }

@@ -451,10 +451,10 @@ During my study, I have achieved certain achievements, the following are the ach
                         $data_list=mysqli_fetch_all($result);
                         foreach($data_list as $data){
                         echo "<tr>";
-                        echo"<h3 class=\"m-0\">Date: $data[2] <br></h3> ";
-                        echo"<h3 class=\"m-0\">Name achievement: $data[1]: <br></h3> ";
+                        echo"<h5 class=\"m-0 font-weight-bold\">$data[2] <br></h5> <br>";
+                        echo"<h5 class=\"m-0\">$data[1]: <br></h5> <br>";
                     
-                        echo"<p class=\"m-0\">Description: $data[3] <br></p> ";
+                        echo"<p class=\"m-0\">$data[3] <br></p> ";
       
                         echo"</tr>";
                         }
@@ -473,10 +473,10 @@ During my study, I have achieved certain achievements, the following are the ach
                         foreach($data_list as $data){
                         echo "<tr>";
                         echo "<tr>";
-                        echo"<h3 class=\"m-0\">Date: $data[2] <br></h3> ";
-                        echo"<h3 class=\"m-0\">Name achievement: $data[1]: <br></h3> ";
+                        echo"<h5 class=\"m-0 font-weight-bold\">$data[2] <br></h5> <br>";
+                        echo"<h5 class=\"m-0\">$data[1]: <br></h5> <br> ";
                     
-                        echo"<p class=\"m-0\">Description: $data[3] <br></p> ";
+                        echo"<p class=\"m-0\">$data[3] <br></p> ";
       
                         echo"</tr>";
                         }
@@ -494,10 +494,10 @@ During my study, I have achieved certain achievements, the following are the ach
                         foreach($data_list as $data){
                         echo "<tr>";
                         echo "<tr>";
-                        echo"<h3 class=\"m-0\">Date: $data[2] <br></h3> ";
-                        echo"<h3 class=\"m-0\">Name achievement: $data[1]: <br></h3> ";
+                        echo"<h5 class=\"m-0 font-weight-bold\">$data[2] <br></h5> <br>";
+                        echo"<h5 class=\"m-0\">$data[1]: <br></h5>  <br>";
                     
-                        echo"<p class=\"m-0\">Description: $data[3] <br></p> ";
+                        echo"<p class=\"m-0\">$data[3] <br></p> ";
       
                         echo"</tr>";
                         }
@@ -779,7 +779,7 @@ Besides studying and working hours, here are some of my hobbies.</p>
                         $data_list=mysqli_fetch_all($result);
                         foreach($data_list as $data){
                         echo "<tr>";
-                        echo"<h4 class=\"m-0\">$data[1]: <br></h4> ";
+                        echo"<h4 class=\"m-0 font-weight-bold\">$data[1]: <br></h4> <br>";
                         echo"<p class=\"m-0\">$data[2] <br></p> ";
                    
                     
@@ -800,7 +800,7 @@ Besides studying and working hours, here are some of my hobbies.</p>
                         $data_list=mysqli_fetch_all($result);
                         foreach($data_list as $data){
                         echo "<tr>";
-                        echo"<h4 class=\"m-0\">$data[1]: <br></h4> ";
+                        echo"<h4 class=\"m-0 font-weight-bold\">$data[1]: <br></h4> <br>";
                         echo"<p class=\"m-0\">$data[2] <br></p> ";
                    
                     
