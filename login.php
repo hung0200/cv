@@ -47,7 +47,7 @@
    
         if($num_rows==0)
         {
-            echo "your pass word is not correct";
+            echo "<p class=\"container \">your pass word is not correct</p>";
            
         }
         else{
@@ -57,6 +57,6 @@
         }
         }
     ?> 
-
+<p class=container shadow p-3 mb-5 bg-white rounded mt-3></p>
 </body>
 </html>

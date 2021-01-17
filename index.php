@@ -38,7 +38,7 @@
                         <div class="row pt-3">
                             <p class=" col-md-4 col-lg-4">Group :</p>
                             <p class=" col-md-1 col-lg-1">:</p>
-                            <p class=" col-md-6 col-lg-7  last_if">Nhóm mấy</p>
+                            <p class=" col-md-6 col-lg-7  last_if">1851061321_1851060029</p>
                         </div>
                         <div class="row">
                             <p class=" col-md-4 col-lg-4">Founding:</p>
