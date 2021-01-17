@@ -21,7 +21,7 @@
 <body>
 
       <!-- nav -->
-      <nav class="navbar navbar-expand-md navbar-light sticky-top ">
+      <nav class="navbar navbar-expand-md navbar-light sticky-top scroll-up-btn ">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
