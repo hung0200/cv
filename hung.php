@@ -40,13 +40,13 @@
             <a class="nav-link" href="#portfolio">PORTFOLIO</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#testimony">HOBBIT</a>
+            <a class="nav-link" href="#hobbit">HOBBIT</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#experience">EXPENRIENCE</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#achiverment">ACHIEVEMENT</a>
+            <a class="nav-link" href="#ACHIEVEMENT">ACHIEVEMENT</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#contact">CONTACT</a>
@@ -109,7 +109,7 @@
                         ?>
                         </div>
                         <div class="row">
-                            <p class=" col-md-4 col-lg-4">address</p>
+                            <p class=" col-md-4 col-lg-4">Address</p>
                             <p class=" col-md-1 col-lg-1">:</p>
                             <?php
                             ob_start() ;
@@ -191,23 +191,23 @@
                 <div class="col-md-1 ">
                     <div class="h-100">
                         <div class="col-lg-3 col-md-3 h-25 w-25">
-                            <a href="">
-                                <i class="fab fa-github-square" style="color: #482aff"></i>
+                            <a href="https://github.com/hung0200">
+                                <i  class="fab fa-github-square" style="color: #482aff"></i>
                             </a>
                         </div>
                         <div class="col-lg-3 col-md-3 h-25 w-25">
-                            <a href="">
+                            <a href="https://www.instagram.com/quangduyhung/">
                                 <i class="fab fa-instagram-square " style="color: #482aff"></i>
                             </a>
                         </div>
                         <div class="col-lg-3 col-md-3 h-25 w-25">
-                            <a href="">
+                            <a href="https://twitter.com/QungQungDuy1">
                                 <i class="fab fa-twitter-square" style="color: #482aff"></i>
                             </a>
                         </div>
                         <div class="col-lg-3 col-md-3 h-25 w-25">
-                            <a href="">
-                                <i class="fab fa-facebook-square" style="color: #482aff"></i>
+                            <a href="https://www.facebook.com/profile.php?id=100007934385454">
+                                <i  class="fab fa-facebook-square" style="color: #482aff"></i>
                             </a>
                         </div>
                     </div>
@@ -225,10 +225,11 @@
                     <h2 class="pb-3">SKILL</h2>
                     <div class="i_c"></div>  
                 </div> <br>
-                <?php
+             
+                        <?php
                             ob_start() ;
                         require 'connect.php';
-                         $sql="SELECT NAME_skill from programming_skills where id='1' and NAME_skill='Application Development'";
+                         $sql="SELECT NAME_skill from programming_skills where id='1' ";
     
                         $result=mysqli_query($conn,$sql);
                         $data_list=mysqli_fetch_all($result);
@@ -240,52 +241,7 @@
                         }
                         ob_flush();
                         ?>
-                
-                <?php
-                            ob_start() ;
-                        require 'connect.php';
-                         $sql="SELECT NAME_skill from programming_skills where id='1' and NAME_skill='Service-Oriented Architecture'";
-    
-                        $result=mysqli_query($conn,$sql);
-                        $data_list=mysqli_fetch_all($result);
-                        foreach($data_list as $data){
-                        echo "<tr>";
-                        echo"<p class=\"last_if\">+$data[0]</p>";
-      
-                        echo"</tr>";
-                        }
-                        ob_flush();
-                        ?>
-                <?php
-                            ob_start() ;
-                        require 'connect.php';
-                         $sql="SELECT NAME_skill from programming_skills where id='1' and NAME_skill='Enterprise Implementations'";
-    
-                        $result=mysqli_query($conn,$sql);
-                        $data_list=mysqli_fetch_all($result);
-                        foreach($data_list as $data){
-                        echo "<tr>";
-                        echo"<p class=\"last_if\">+$data[0]</p>";
-      
-                        echo"</tr>";
-                        }
-                        ob_flush();
-                        ?>
-                 <?php
-                            ob_start() ;
-                        require 'connect.php';
-                         $sql="SELECT NAME_skill from programming_skills where id='1' and NAME_skill='Software Development Lifecycle'";
-    
-                        $result=mysqli_query($conn,$sql);
-                        $data_list=mysqli_fetch_all($result);
-                        foreach($data_list as $data){
-                        echo "<tr>";
-                        echo"<p class=\"last_if\">+$data[0]</p>";
-      
-                        echo"</tr>";
-                        }
-                        ob_flush();
-                        ?>
+            
             </div>
             <div class="col-md-8 d-flex flex-column justify-content-center px-5 border-left">  
                     <div class="row pt-3">
@@ -473,7 +429,8 @@
                     <h2 class="pb-3">ACHIEVEMENT</h2>
                     <div class="i_c"></div>  
                 </div> <br>
-                <p>mota</p>
+                <p>
+During my study, I have achieved certain achievements, the following are the achievements I have attained in recent years.</p>
                 
             </div> 
 
@@ -494,10 +451,10 @@
                         $data_list=mysqli_fetch_all($result);
                         foreach($data_list as $data){
                         echo "<tr>";
-                        echo"<p class=\"m-0\">$data[2] <br></p> ";
-                        echo"<p class=\"m-0\">$data[1]: <br></p> ";
+                        echo"<h3 class=\"m-0\">Date: $data[2] <br></h3> ";
+                        echo"<h3 class=\"m-0\">Name achievement: $data[1]: <br></h3> ";
                     
-                        echo"<p class=\"m-0\">$data[3] <br></p> ";
+                        echo"<p class=\"m-0\">Description: $data[3] <br></p> ";
       
                         echo"</tr>";
                         }
@@ -515,10 +472,11 @@
                         $data_list=mysqli_fetch_all($result);
                         foreach($data_list as $data){
                         echo "<tr>";
-                        echo"<p class=\"m-0\">$data[2] <br></p> ";
-                        echo"<p class=\"m-0\">$data[1]: <br></p> ";
-                      
-                        echo"<p class=\"m-0\">$data[3] <br></p> ";
+                        echo "<tr>";
+                        echo"<h3 class=\"m-0\">Date: $data[2] <br></h3> ";
+                        echo"<h3 class=\"m-0\">Name achievement: $data[1]: <br></h3> ";
+                    
+                        echo"<p class=\"m-0\">Description: $data[3] <br></p> ";
       
                         echo"</tr>";
                         }
@@ -535,10 +493,11 @@
                         $data_list=mysqli_fetch_all($result);
                         foreach($data_list as $data){
                         echo "<tr>";
-                             echo"<p class=\"m-0\">$data[2] <br></p> ";
-                        echo"<p class=\"m-0\">$data[1]: <br></p> ";
-                   
-                        echo"<p class=\"m-0\">$data[3] <br></p> ";
+                        echo "<tr>";
+                        echo"<h3 class=\"m-0\">Date: $data[2] <br></h3> ";
+                        echo"<h3 class=\"m-0\">Name achievement: $data[1]: <br></h3> ";
+                    
+                        echo"<p class=\"m-0\">Description: $data[3] <br></p> ";
       
                         echo"</tr>";
                         }
@@ -568,7 +527,8 @@
                     <h2 class="pb-3">EDUCATION</h2>
                     <div class="i_c"></div>  
                 </div> <br>
-                <p class="px-3"> </p>
+                <p class="px-3"> 
+these are the places I have studied and achieved in those schools</p>
             </div> 
             <div class="col-md-8 d-flex flex-column justify-content-center px-5 py-5 border-left " style="background-color: #E5FEFD">
                 <div class=" shadow  bg-white rounded " >
@@ -607,7 +567,7 @@
                         $data_list=mysqli_fetch_all($result);
                         foreach($data_list as $data){
                         echo "<tr>";
-                        echo"$data[2]";
+                        echo"achievement: $data[2]";
                       
       
                         echo"</tr>";
@@ -651,7 +611,7 @@
                         $data_list=mysqli_fetch_all($result);
                         foreach($data_list as $data){
                         echo "<tr>";
-                        echo"$data[2]";
+                        echo"achievement: $data[2]";
                       
       
                         echo"</tr>";
@@ -695,7 +655,7 @@
                         $data_list=mysqli_fetch_all($result);
                         foreach($data_list as $data){
                         echo "<tr>";
-                        echo"$data[2]";
+                        echo"achievement: $data[2]";
                       
       
                         echo"</tr>";
@@ -768,7 +728,7 @@ After nearly 3 years of learning to code here are some of the projects that I ha
                         $data_list=mysqli_fetch_all($result);
                         foreach($data_list as $data){
                         echo "<tr>";
-                        echo" <p class=\"text-center\">$data[3]</p>";
+                        echo" <p class=\"text-center\">DESCRIPTION: $data[3]</p>";
                       
       
                         echo"</tr>";
@@ -819,7 +779,7 @@ Besides studying and working hours, here are some of my hobbies.</p>
                         $data_list=mysqli_fetch_all($result);
                         foreach($data_list as $data){
                         echo "<tr>";
-                        echo"<p class=\"m-0\">$data[1]: <br></p> ";
+                        echo"<h4 class=\"m-0\">$data[1]: <br></h4> ";
                         echo"<p class=\"m-0\">$data[2] <br></p> ";
                    
                     
@@ -840,7 +800,7 @@ Besides studying and working hours, here are some of my hobbies.</p>
                         $data_list=mysqli_fetch_all($result);
                         foreach($data_list as $data){
                         echo "<tr>";
-                        echo"<p class=\"m-0\">$data[1]: <br></p> ";
+                        echo"<h4 class=\"m-0\">$data[1]: <br></h4> ";
                         echo"<p class=\"m-0\">$data[2] <br></p> ";
                    
                     
@@ -861,9 +821,8 @@ Besides studying and working hours, here are some of my hobbies.</p>
                         $data_list=mysqli_fetch_all($result);
                         foreach($data_list as $data){
                         echo "<tr>";
-                        echo"<p class=\"m-0\">$data[1]: <br></p> ";
+                        echo"<h4 class=\"m-0\">$data[1]: <br></h4> ";
                         echo"<p class=\"m-0\">$data[2] <br></p> ";
-                   
                     
                  
       
@@ -895,10 +854,11 @@ Besides studying and working hours, here are some of my hobbies.</p>
                     <h2 class="pb-3">EXPERIENCE</h2>
                     <div class="i_c"></div>  
                 </div> <br>
-                <p class="px-3"></p>
+                <p class="px-3">
+These are the places where I worked cso related to computers and programming</p>
             </div> 
 
-            <div class="col-md-8 d-flex flex-column justify-content-center px-5 py-5 border-left " style="background-color: #ebebeb">
+            <div class="col-md-8 d-flex flex-column justify-content-center px-5 py-5 border-left " style="background-color: #E5FEFD">
                 <div class=" shadow  bg-white rounded " >
                     <div id="accordion" >
                         <div class="card "  >
@@ -935,11 +895,11 @@ Besides studying and working hours, here are some of my hobbies.</p>
                         foreach($data_list as $data){
                         echo "<tr>";
                       
-                        echo"$data[3]<br>";
-                        echo"$data[4]<br>";
+                        echo"Date: $data[3]<br>";
+                        echo"Position: $data[4]<br>";
                         
-                        echo"$data[2]<br>";
-                        echo"$data[5]<br>";
+                        echo"Description: $data[2]<br>";
+                        echo"Achievement: $data[5]<br>";
       
                         echo"</tr>";
                         }
@@ -983,11 +943,11 @@ Besides studying and working hours, here are some of my hobbies.</p>
                         foreach($data_list as $data){
                         echo "<tr>";
                       
-                        echo"$data[3]<br>";
-                        echo"$data[4]<br>";
+                        echo"Date: $data[3]<br>";
+                        echo"Position: $data[4]<br>";
                         
-                        echo"$data[2]<br>";
-                        echo"$data[5]<br>";
+                        echo"Description: $data[2]<br>";
+                        echo"Achievement: $data[5]<br>";
       
                         echo"</tr>";
                         }
@@ -1031,11 +991,11 @@ Besides studying and working hours, here are some of my hobbies.</p>
                         foreach($data_list as $data){
                         echo "<tr>";
                       
-                        echo"$data[3]<br>";
-                        echo"$data[4]<br>";
+                        echo"Date: $data[3]<br>";
+                        echo"Position: $data[4]<br>";
                         
-                        echo"$data[2]<br>";
-                        echo"$data[5]<br>";
+                        echo"Description: $data[2]<br>";
+                        echo"Achievement: $data[5]<br>";
       
                         echo"</tr>";
                         }
@@ -1138,7 +1098,7 @@ Besides studying and working hours, here are some of my hobbies.</p>
         {
             include('class.smtp.php');
             include "class.phpmailer.php"; 
-            $nFrom = "Quàng dUY hưng";    //mail duoc gui tu dau, thuong de ten cong ty ban
+            $nFrom = "306no.01";    //mail duoc gui tu dau, thuong de ten cong ty ban
             $mFrom = 'hung321chiengden@gmail.com';  //dia chi email cua ban 
             $mPass = '09450117350';       //mat khau email cua ban
             $nTo = $na; //Ten nguoi nhan
@@ -1146,7 +1106,7 @@ Besides studying and working hours, here are some of my hobbies.</p>
             $mail             = new PHPMailer();
             $body             = '
             Thank you for sending me lazy, I will respond as soon as possible.ddd';   // Noi dung email
-            $title = 'thank you';   //Tieu de gui mail
+            $title = 'thank you for contact to us';   //Tieu de gui mail
             $mail->IsSMTP();             
             $mail->CharSet  = "utf-8";
             $mail->SMTPDebug  = 0;   // enables SMTP debug information (for testing)
@@ -1164,13 +1124,13 @@ Besides studying and working hours, here are some of my hobbies.</p>
             $mail->AddAddress( $em, $nTo);
             // thuc thi lenh gui mail 
             if(!$mail->Send()) {
-                echo 'Co loi!';
+                echo 'error!';
                  
             } 
             header("Location:contact.php");
         }
         else{
-            echo "Không thêm được";
+            echo "error!";
         }
         }
 
