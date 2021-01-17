@@ -18,7 +18,7 @@
   
   </head>
  
-</div>
+<body>
 
       <!-- nav -->
       <nav class="navbar navbar-expand-md navbar-light sticky-top ">
@@ -54,7 +54,7 @@
         </ul>
     </div>
     </nav>
-
+<section>
 <!-- about -->
     <div id="about" class="container shadow p-3 mb-5 bg-white rounded mt-3">
         <div class="container" >
@@ -421,7 +421,7 @@
     </div>
 
 <!-- ACHIEVEMENT -->
-<div id="ACHIEVEMENT" class="container-fluid shadow p-3 mb-5 rounded mt-3  text-dark">
+<div id="ACHIEVEMENT" class="container shadow p-3 mb-5 bg-white rounded mt-3">
     <div class="container">
         <div class="row px-3">
             <div class="col-md-4 ">
@@ -751,7 +751,7 @@ After nearly 3 years of learning to code here are some of the projects that I ha
 </div>
 
 <!--hobbit-->
-<div id="hobbit" class="container-fluid shadow p-3 mb-5 rounded mt-3  text-dark">
+<div id="hobbit" class="container shadow p-3 mb-5 bg-white rounded mt-3">
     <div class="container">
         <div class="row px-3">
             <div class="col-md-4 ">
@@ -1141,7 +1141,7 @@ These are the places where I worked cso related to computers and programming</p>
 
 
  
-
+ </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
