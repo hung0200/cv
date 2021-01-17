@@ -317,7 +317,7 @@
                     <?php
                     ob_start() ;
                         require 'connect.php';
-                         $sql="SELECT skill from SKILL where ID='3' AND skill='JS'";
+                         $sql="SELECT skill from SKILL where ID='3' AND skill='javascrip'";
     
                         $result=mysqli_query($conn,$sql);
                         $data_list=mysqli_fetch_all($result);
@@ -333,7 +333,7 @@
                         <?php
                     ob_start() ;
                         require 'connect.php';
-                         $sql="SELECT * from SKILL where ID='3' AND skill='JS'";
+                         $sql="SELECT * from SKILL where ID='3' AND skill='javascrip'";
     
                         $result=mysqli_query($conn,$sql);
                         $data_list=mysqli_fetch_all($result);
@@ -445,7 +445,7 @@ During my study, I have achieved certain achievements, the following are the ach
                         <?php
                     ob_start() ;
                         require 'connect.php';
-                         $sql="SELECT * from ACHIEVEMENT where ID='3' AND date='2020-12-10' ";
+                         $sql="SELECT * from ACHIEVEMENT where ID='3' AND DESCRIPTION='Passed over 300 contestants to reach the prize.' ";
     
                         $result=mysqli_query($conn,$sql);
                         $data_list=mysqli_fetch_all($result);
@@ -466,7 +466,7 @@ During my study, I have achieved certain achievements, the following are the ach
                         <?php
                     ob_start() ;
                         require 'connect.php';
-                         $sql="SELECT * from ACHIEVEMENT where ID='3' and date='2019-09-12' ";
+                         $sql="SELECT * from ACHIEVEMENT where ID='3' and date='2019-11-04' ";
     
                         $result=mysqli_query($conn,$sql);
                         $data_list=mysqli_fetch_all($result);
@@ -487,7 +487,7 @@ During my study, I have achieved certain achievements, the following are the ach
                         <?php
                     ob_start() ;
                         require 'connect.php';
-                         $sql="SELECT * from ACHIEVEMENT where ID='3' and date ='2019-12-05'";
+                         $sql="SELECT * from ACHIEVEMENT where ID='3' and date='2018-04-20'";
     
                         $result=mysqli_query($conn,$sql);
                         $data_list=mysqli_fetch_all($result);
@@ -541,7 +541,7 @@ these are the places I have studied and achieved in those schools</p>
                                     <?php
                         ob_start() ;
                         require 'connect.php';
-                         $sql="SELECT * from educaton where ID='3' and date='2010-05-07'";
+                         $sql="SELECT * from educaton where ID='3' and date='2012-09-02'";
     
                         $result=mysqli_query($conn,$sql);
                         $data_list=mysqli_fetch_all($result);
@@ -561,7 +561,7 @@ these are the places I have studied and achieved in those schools</p>
                                 <?php
                         ob_start() ;
                         require 'connect.php';
-                         $sql="SELECT * from educaton where ID='3' and date='2010-05-07'";
+                         $sql="SELECT * from educaton where ID='3' and date='2012-09-02'";
     
                         $result=mysqli_query($conn,$sql);
                         $data_list=mysqli_fetch_all($result);
@@ -585,7 +585,7 @@ these are the places I have studied and achieved in those schools</p>
                                     <?php
                         ob_start() ;
                         require 'connect.php';
-                         $sql="SELECT * from educaton where ID='3' and date='2015-06-06'";
+                         $sql="SELECT * from educaton where ID='3' and date='2016-09-02'";
     
                         $result=mysqli_query($conn,$sql);
                         $data_list=mysqli_fetch_all($result);
@@ -605,7 +605,7 @@ these are the places I have studied and achieved in those schools</p>
                                 <?php
                         ob_start() ;
                         require 'connect.php';
-                         $sql="SELECT * from educaton where ID='3' and date='2010-05-07'";
+                         $sql="SELECT * from educaton where ID='3' and date='2016-09-02'";
     
                         $result=mysqli_query($conn,$sql);
                         $data_list=mysqli_fetch_all($result);
@@ -629,7 +629,7 @@ these are the places I have studied and achieved in those schools</p>
                                     <?php
                         ob_start() ;
                         require 'connect.php';
-                         $sql="SELECT * from educaton where ID='3' and date='2018-06-12'";
+                         $sql="SELECT * from educaton where ID='3' and date='2018-08-18'";
     
                         $result=mysqli_query($conn,$sql);
                         $data_list=mysqli_fetch_all($result);
@@ -649,7 +649,7 @@ these are the places I have studied and achieved in those schools</p>
                                 <?php
                         ob_start() ;
                         require 'connect.php';
-                         $sql="SELECT * from educaton where ID='3' and date='2010-05-07'";
+                         $sql="SELECT * from educaton where ID='3' and date='2018-08-18'";
     
                         $result=mysqli_query($conn,$sql);
                         $data_list=mysqli_fetch_all($result);
@@ -691,7 +691,56 @@ After nearly 3 years of learning to code here are some of the projects that I ha
 
             
                 <div class="row">
-                    <div class="col-md-12 ">
+                    <div class="col-md-4 ">
+                        <a id="modal-318613" href="#modal-container-318613"  data-toggle="modal">
+                            <img src="image/hung/duan1.png" alt="" class="img-fluid">
+                        </a>
+                        <?php
+                        ob_start() ;
+                        require 'connect.php';
+                         $sql="SELECT * from projects where ID='3' and FIELD='software'";
+    
+                        $result=mysqli_query($conn,$sql);
+                        $data_list=mysqli_fetch_all($result);
+                        foreach($data_list as $data){
+                        echo "<tr>";
+                        echo" <p class=\"text-center\">$data[1]</p>";
+                      
+      
+                        echo"</tr>";
+                        }
+                        ob_flush();
+                        ?>
+                      
+                        <div class="modal fade" id="modal-container-318613" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+
+                                    <div class="modal-body">
+                                        
+                                            
+                                            <?php
+                        ob_start() ;
+                        require 'connect.php';
+                         $sql="SELECT * from projects where ID='3' and FIELD='software'";
+    
+                        $result=mysqli_query($conn,$sql);
+                        $data_list=mysqli_fetch_all($result);
+                        foreach($data_list as $data){
+                        echo "<tr>";
+                        echo" <p class=\"text-center\">DESCRIPTION: $data[3]</p>";
+                      
+      
+                        echo"</tr>";
+                        }?>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
                         <a id="modal-318613" href="#modal-container-318613"  data-toggle="modal">
                             <img src="image/hung/duan1.png" alt="" class="img-fluid">
                         </a>
@@ -741,6 +790,57 @@ After nearly 3 years of learning to code here are some of the projects that I ha
                         </div>
                     </div>
                    
+                    <div class="col-md-4 ">
+                        <a id="modal-318613" href="#modal-container-318613"  data-toggle="modal">
+                            <img src="image/hung/duan1.png" alt="" class="img-fluid">
+                        </a>
+                        <?php
+                        ob_start() ;
+                        require 'connect.php';
+                         $sql="SELECT * from projects where ID='3' and FIELD='software'";
+    
+                        $result=mysqli_query($conn,$sql);
+                        $data_list=mysqli_fetch_all($result);
+                        foreach($data_list as $data){
+                        echo "<tr>";
+                        echo" <p class=\"text-center\">$data[1]</p>";
+                      
+      
+                        echo"</tr>";
+                        }
+                        ob_flush();
+                        ?>
+                      
+                        <div class="modal fade" id="modal-container-318613" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+
+                                    <div class="modal-body">
+                                        
+                                            
+                                            <?php
+                        ob_start() ;
+                        require 'connect.php';
+                         $sql="SELECT * from projects where ID='3' and FIELD='software'";
+    
+                        $result=mysqli_query($conn,$sql);
+                        $data_list=mysqli_fetch_all($result);
+                        foreach($data_list as $data){
+                        echo "<tr>";
+                        echo" <p class=\"text-center\">DESCRIPTION: $data[3]</p>";
+                      
+      
+                        echo"</tr>";
+                        }?>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                   
 
 
                 
@@ -773,7 +873,7 @@ Besides studying and working hours, here are some of my hobbies.</p>
                         <?php
                     ob_start() ;
                         require 'connect.php';
-                         $sql="SELECT * from hobbit where ID='3' AND name ='play video game' ";
+                         $sql="SELECT * from hobbit where ID='3' AND name ='Read book' ";
     
                         $result=mysqli_query($conn,$sql);
                         $data_list=mysqli_fetch_all($result);
@@ -815,7 +915,7 @@ Besides studying and working hours, here are some of my hobbies.</p>
                         <?php
                     ob_start() ;
                         require 'connect.php';
-                         $sql="SELECT * from hobbit where ID='3' AND name ='travel' ";
+                         $sql="SELECT * from hobbit where ID='3' AND name ='Playing basketball' ";
     
                         $result=mysqli_query($conn,$sql);
                         $data_list=mysqli_fetch_all($result);
@@ -868,7 +968,7 @@ These are the places where I worked cso related to computers and programming</p>
                                     <?php
                         ob_start() ;
                         require 'connect.php';
-                         $sql="SELECT * from experience where ID='3' and time='2020-11-05'";
+                         $sql="SELECT * from experience where ID='3' and time='2019-11-05'";
     
                         $result=mysqli_query($conn,$sql);
                         $data_list=mysqli_fetch_all($result);
@@ -888,7 +988,7 @@ These are the places where I worked cso related to computers and programming</p>
                                 <?php
                         ob_start() ;
                         require 'connect.php';
-                         $sql="SELECT * from experience where ID='3' and time='2020-11-05'";
+                         $sql="SELECT * from experience where ID='3' and time='2019-11-05'";
     
                         $result=mysqli_query($conn,$sql);
                         $data_list=mysqli_fetch_all($result);
@@ -916,7 +1016,7 @@ These are the places where I worked cso related to computers and programming</p>
                                     <?php
                         ob_start() ;
                         require 'connect.php';
-                         $sql="SELECT * from experience where ID='3' and time='2019-05-12'";
+                         $sql="SELECT * from experience where ID='3' and time='2020-07-02'";
     
                         $result=mysqli_query($conn,$sql);
                         $data_list=mysqli_fetch_all($result);
@@ -936,7 +1036,7 @@ These are the places where I worked cso related to computers and programming</p>
                                 <?php
                         ob_start() ;
                         require 'connect.php';
-                         $sql="SELECT * from experience where ID='3' and time='2019-05-12'";
+                         $sql="SELECT * from experience where ID='3' and time='2020-07-02'";
     
                         $result=mysqli_query($conn,$sql);
                         $data_list=mysqli_fetch_all($result);
@@ -957,53 +1057,7 @@ These are the places where I worked cso related to computers and programming</p>
                             </div>
                         </div>
 
-                        <div class="card" >
-                            <div class="card-header">
-                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                                    <i class="fab fa-readme">&emsp;</i>
-                                    <?php
-                        ob_start() ;
-                        require 'connect.php';
-                         $sql="SELECT * from experience where ID='3' and time='2020-01-13'";
-    
-                        $result=mysqli_query($conn,$sql);
-                        $data_list=mysqli_fetch_all($result);
-                        foreach($data_list as $data){
-                        echo "<tr>";
-                        echo"$data[1]";
-                      
-      
-                        echo"</tr>";
-                        }
-                        ob_flush();
-                        ?>
-                                </a>
-                            </div>
-                            <div id="collapseThree" class="collapse" data-parent="#accordion">
-                                <div class="card-body">
-                                <?php
-                        ob_start() ;
-                        require 'connect.php';
-                         $sql="SELECT * from experience where ID='3' and time='2020-01-13'";
-    
-                        $result=mysqli_query($conn,$sql);
-                        $data_list=mysqli_fetch_all($result);
-                        foreach($data_list as $data){
-                        echo "<tr>";
-                      
-                        echo"Date: $data[3]<br>";
-                        echo"Position: $data[4]<br>";
                         
-                        echo"Description: $data[2]<br>";
-                        echo"Achievement: $data[5]<br>";
-      
-                        echo"</tr>";
-                        }
-                        ob_flush();
-                        ?>
-                                </div>
-                            </div>
-                        </div>
                         
                     </div>
                 </div>
@@ -1105,7 +1159,7 @@ These are the places where I worked cso related to computers and programming</p>
             $mTo = $em;   //dia chi nhan mail
             $mail             = new PHPMailer();
             $body             = '
-            Thank you for sending me lazy, I will respond as soon as possible.ddd';   // Noi dung email
+            Thank you for sending me lazy, I will respond as soon as possible.';   // Noi dung email
             $title = 'thank you for contact to us';   //Tieu de gui mail
             $mail->IsSMTP();             
             $mail->CharSet  = "utf-8";

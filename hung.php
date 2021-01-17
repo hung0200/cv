@@ -1105,7 +1105,7 @@ These are the places where I worked cso related to computers and programming</p>
             $mTo = $em;   //dia chi nhan mail
             $mail             = new PHPMailer();
             $body             = '
-            Thank you for sending me lazy, I will respond as soon as possible.ddd';   // Noi dung email
+            Thank you for sending me lazy, I will respond as soon as possible.';   // Noi dung email
             $title = 'thank you for contact to us';   //Tieu de gui mail
             $mail->IsSMTP();             
             $mail->CharSet  = "utf-8";
