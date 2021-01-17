@@ -21,7 +21,7 @@
 </div>
 
       <!-- nav -->
-      <nav class="navbar navbar-expand-md navbar-light sticky-top ">
+      <nav class="navbar navbar-expand-md navbar-light  sticky-top ">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -61,13 +61,13 @@
             <div class="row">
                 <div class="col-md-4 ">
                     <div class="py-2">
-                        <img alt="" src="121820155_2779832892291163_5027139127195995414_o.jpg" class="img-fluid"/>
+                        <img alt="" src="image/dat/about.jpg" class="img-fluid"/>
                     </div>
                     <div>
                     <?php
                     ob_start() ;
                         require 'connect.php';
-                         $sql="SELECT * from member where id='1'";
+                         $sql="SELECT * from member where id='3'";
     
                         $result=mysqli_query($conn,$sql);
                         $data_list=mysqli_fetch_all($result);
@@ -95,7 +95,7 @@
                             <?php
                             ob_start() ;
                         require 'connect.php';
-                         $sql="SELECT * from member where id='1'";
+                         $sql="SELECT * from member where id='3'";
     
                         $result=mysqli_query($conn,$sql);
                         $data_list=mysqli_fetch_all($result);
@@ -114,7 +114,7 @@
                             <?php
                             ob_start() ;
                         require 'connect.php';
-                         $sql="SELECT * from member where id='1'";
+                         $sql="SELECT * from member where id='3'";
     
                         $result=mysqli_query($conn,$sql);
                         $data_list=mysqli_fetch_all($result);
@@ -133,7 +133,7 @@
                             <?php
                             ob_start() ;
                         require 'connect.php';
-                         $sql="SELECT * from member where id='1'";
+                         $sql="SELECT * from member where id='3'";
     
                         $result=mysqli_query($conn,$sql);
                         $data_list=mysqli_fetch_all($result);
@@ -152,7 +152,7 @@
                             <?php
                             ob_start() ;
                         require 'connect.php';
-                         $sql="SELECT * from member where id='1'";
+                         $sql="SELECT * from member where id='3'";
     
                         $result=mysqli_query($conn,$sql);
                         $data_list=mysqli_fetch_all($result);
@@ -171,7 +171,7 @@
                             <?php
                             ob_start() ;
                         require 'connect.php';
-                         $sql="SELECT * from member where id='1'";
+                         $sql="SELECT * from member where id='3'";
     
                         $result=mysqli_query($conn,$sql);
                         $data_list=mysqli_fetch_all($result);
@@ -191,23 +191,23 @@
                 <div class="col-md-1 ">
                     <div class="h-100">
                         <div class="col-lg-3 col-md-3 h-25 w-25">
-                            <a href="">
-                                <i class="fab fa-github-square" style="color: #482aff"></i>
+                            <a href="https://github.com/dotiendat3101">
+                                <i class="fab fa-github-square" ></i>
                             </a>
                         </div>
                         <div class="col-lg-3 col-md-3 h-25 w-25">
-                            <a href="">
-                                <i class="fab fa-instagram-square " style="color: #482aff"></i>
+                            <a href="https://www.instagram.com/?hl=en">
+                                <i class="fab fa-instagram-square "></i>
                             </a>
                         </div>
                         <div class="col-lg-3 col-md-3 h-25 w-25">
-                            <a href="">
-                                <i class="fab fa-twitter-square" style="color: #482aff"></i>
+                            <a href="https://twitter.com/dotiendat3101">
+                                <i class="fab fa-twitter-square" ></i>
                             </a>
                         </div>
                         <div class="col-lg-3 col-md-3 h-25 w-25">
-                            <a href="">
-                                <i class="fab fa-facebook-square" style="color: #482aff"></i>
+                            <a href="https://www.facebook.com/dat.tkantkank/">
+                                <i class="fab fa-facebook-square" ></i>
                             </a>
                         </div>
                     </div>
@@ -558,7 +558,7 @@
 
 <!-- education -->
 <div id="education" class="container shadow mb-5 bg-white rounded mt-3">
-<div class="container">
+
         <div class="row">
             <div class="col-md-4 pt-3 pb-3">
                 <div class="py-2 px-3">
@@ -708,7 +708,7 @@
             </div>
         </div>
     </div>
-    </div>
+
 
    
 <!-- PORTFOLIO -->
@@ -850,7 +850,7 @@
 
 <!-- experience -->
 <div id="experience" class="container shadow mb-5 bg-white rounded mt-3">
-<div class="container">
+
         <div class="row">
             <div class="col-md-4 pt-3 pb-3">
                 <div class="py-2 px-3">
@@ -910,8 +910,7 @@
             </div>
         </div>
     </div>
-    </div>
-    /div>
+
 
 
 <!-- contact -->

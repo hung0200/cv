@@ -7,24 +7,24 @@ body{
 .navbar-nav{
     width: 100%;
     font-weight: bolder;
-    background-color:#9DAFB0;
-    border-radius: 50%;
+    background-color:#50a1d6;
+    font-size: 25px;
 }
 
 h2{
     font-weight: bold;
-    color: #080808;
+    color: #50a1d6;
     
 }
 
 .i_c{
     width: 50px;
     height: 20px;
-    border: 2px solid #151516;
+    border: 2px solid #50a1d6;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 20px;
-    background-color: #242327;
+    background-color: #50a1d6;
 }
 
 .last_if:after{
@@ -62,13 +62,7 @@ h2{
    width: 100%;
    border-radius: 10%;
  }
-.container-fluid{
-  background-image: url("hoach-dinh-noi-dung-va-cong-nghe-ky-thuat-so-01_kwu8iu.jpg");
-  
-}
-.container{
-  background-color: #F2E7DB;
-}
+
 
 .nav-tabs {
   border-bottom: 0px solid transparent;
