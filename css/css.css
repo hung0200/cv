@@ -1,32 +1,30 @@
 body{
     font-family: 'Open Sans', sans-serif;
-
-    background-color:#E7F1F6;
-
+    background-image: url("20926222957-xu-huong-marketing-ky-thuat-so.jpg");
+    background-size: 100%;
 }
 
 .navbar-nav{
     width: 100%;
     font-weight: bolder;
-    background-color:#9DAFB0;
-    border-radius: 5%;
+    background-color:#50a1d6;
+    font-size: 25px;
 }
 
 h2{
     font-weight: bold;
-    color: #9566c4;
+    color: #50a1d6;
     
 }
-
 
 .i_c{
     width: 50px;
     height: 20px;
-    border: 2px solid #151516;
+    border: 2px solid #50a1d6;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 20px;
-    background-color: #242327;
+    background-color: #50a1d6;
 }
 
 .last_if:after{
@@ -62,22 +60,13 @@ h2{
 
  #main img{
    width: 100%;
-   border-radius: 50%;
+   border-radius: 10%;
  }
-.container-fluid{
-background-color:#E5FEFD;
-  
-}
-.container{
-  background-color: #E7F1F6;
-}
+
 
 .nav-tabs {
   border-bottom: 0px solid transparent;
 }
 .nav-tabs .nav-link {
   border: 0px solid transparent;
-}
-.carousel-inner {
-   background-color: #E7F1F6;
 }
