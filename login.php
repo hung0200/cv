@@ -23,7 +23,7 @@
         </div>
         
         <button type="submit" class="btn btn-primary">CREAETE</button>
-        <a href="a.php" class="btn btn-primary ">CANCER</a></div>
+        <a href="index.php" class="btn btn-primary ">CANCER</a></div>
         </div>
         </form>
     </div>
