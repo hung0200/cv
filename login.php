@@ -22,7 +22,7 @@
             <input type="text"name="password" class="form-control">
         </div>
         
-        <button type="submit" class="btn btn-primary">CREAETE</button>
+        <button type="submit" class="btn btn-primary">LOGIN</button>
         <a href="index.php" class="btn btn-primary ">CANCER</a></div>
         </div>
         </form>
