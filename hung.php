@@ -128,7 +128,7 @@
                         ?>
                         </div>
                         <div class="row">
-                            <p class=" col-md-4 col-lg-4">Date_of_bỉth</p>
+                            <p class=" col-md-4 col-lg-4">Date_of_birth</p>
                             <p class=" col-md-1 col-lg-1">:</p>
                             <?php
                             ob_start() ;
